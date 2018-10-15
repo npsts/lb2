@@ -8,7 +8,7 @@ body {
 ul {
     margin: 0;
     padding: 0;
-    /**/overflow: hidden;/**/
+    overflow: hidden;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -25,13 +25,8 @@ li a, .menubtn {
     text-decoration: none;
 }
 
-li a:hover, .menu:hover .menubtn {
+li a:hover, .menu .menubtn {
     background-color: rgb(109, 15, 153);
-}
-
-li a.active {
-    background-color: rgb(109, 15, 153);
-    color: white;
 }
 
 li.right {
@@ -41,29 +36,7 @@ li.right {
 li.menu {
     display: block;
 }
-/*
-.menu-content {
-    display: none;
-    position: absolute;
-    background-color: #050505;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(55, 7, 70, 0.2);
-    z-index: 1;
-}
-.menu-content a {
-    color: rgb(253, 249, 253);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
 
-.menu-content a:hover {background-color: rgb(109, 15, 153)}
-
-.menu:hover .menu-content {
-    display: block;
-}
-*/
 @media screen and (max-width: 600px){
 
     li {
@@ -76,5 +49,14 @@ li.menu {
 
     li a, .menubtn {
         display: block;
+    }
+
+    li .menu_content{
+        display: none;
+    }
+    
+    li:hover  .menu_content{
+        display: block;
+        
     }
 }
