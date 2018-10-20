@@ -86,6 +86,12 @@ li.menu {
         width: 100%;
     }
 
+    /* About */ 
+    .about{
+        flex-direction: column;
+        margin: auto;
+    }
+
     /* Rules */ 
     .all_rules, .a2ll_rules{                    
         flex-direction: column;
@@ -93,6 +99,14 @@ li.menu {
     }
 
 }
+
+
+.gameim{
+    margin: 0% 0% 13% 0%; 
+   
+}
+
+
 
  /* Screens */ 
  
@@ -104,7 +118,7 @@ li.menu {
 }
 
 .all_screens .photo{
-    margin: 1% 1% 1% 2%; 
+    margin: 1% 1% 5% 2%; 
 }
 
 
@@ -132,4 +146,29 @@ p{
     font-size: 30px;
     text-align: left;
     color: white;
+}
+
+/* About */ 
+
+.info  {
+    font-family: 'Kalam', cursive ;
+    font-size: 30px;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+.about{
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.about .me, .info{
+    margin: 1% 5% 5% 5%; 
+}
+
+/* Links */ 
+.links{
+    text-align: center;
 }
