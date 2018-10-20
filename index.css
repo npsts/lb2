@@ -4,6 +4,13 @@ body {
     padding: 0;
 }
 
+h1{
+    font-family: 'Kalam', cursive ;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
 /*navbar*/
 
 ul {
@@ -79,6 +86,12 @@ li.menu {
         width: 100%;
     }
 
+    /* Rules */ 
+    .all_rules, .a2ll_rules{                    
+        flex-direction: column;
+        margin: auto;
+    }
+
 }
 
  /* Screens */ 
@@ -94,9 +107,29 @@ li.menu {
     margin: 1% 1% 1% 2%; 
 }
 
-h1{
+
+
+
+/* Rules */ 
+ 
+.all_rules{
+    overflow: hidden;
+    display: flex;
+}
+
+.a2ll_rules {
+    width: 100%;
+    margin: auto;
+    display: center;
+}
+
+._rules{
+    margin: 0% 10% 0% 10%; 
+}
+
+p{
     font-family: 'Kalam', cursive ;
-    font-size: 50px;
-    text-align: center;
+    font-size: 30px;
+    text-align: left;
     color: white;
 }
