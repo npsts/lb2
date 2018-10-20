@@ -1,16 +1,18 @@
 body {
-    background-image: url(fon.gif) ;
-    background-size: 107%;
+    background-color: black;
     margin: 0;
     padding: 0;
 }
+
+/*navbar*/
 
 ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Bitter', serif ;
+    font-size: 20px;
 }
 
 li {
@@ -37,7 +39,14 @@ li.menu {
     display: block;
 }
 
+.navbar .icon{
+    display: none;
+}
+
+
 @media screen and (max-width: 600px){
+
+     /*navbar*/
 
     li {
         float: none;
@@ -59,4 +68,35 @@ li.menu {
         display: block;
         
     }
+
+    /* Screens */
+
+    .all_screens{                    
+        flex-direction: column;
+        margin: auto;
+    }
+    .all_screens .photo img{
+        width: 100%;
+    }
+
+}
+
+ /* Screens */ 
+ 
+.all_screens{
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.all_screens .photo{
+    margin: 1% 1% 1% 2%; 
+}
+
+h1{
+    font-family: 'Kalam', cursive ;
+    font-size: 50px;
+    text-align: center;
+    color: white;
 }
