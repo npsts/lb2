@@ -1,0 +1,130 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-family: "Open Sans", sans-serif; }
+
+h1 {
+  font-size: 3em;
+  text-align: center; }
+
+h3 {
+  text-align: center; }
+
+.shadow-text {
+  text-shadow: 0px 0px 5px #fff; }
+
+html {
+background-color: #000;
+}
+
+.container {
+  margin: 30px auto; }
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.game {
+  position: relative;
+  margin: 0 auto;
+  width: 320px; }
+
+#game {
+  position: relative;
+  background-color: #ccc;
+  border: 5px solid blueviolet;
+  cursor: pointer; }
+  #game tr:nth-child(3), #game tr:nth-child(6) {
+    border-bottom: 2px solid #000; }
+  #game td {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #000;
+    text-align: center;
+    vertical-align: middle; }
+    #game td:nth-child(3), #game td:nth-child(6) {
+      border-right: 3px solid #000; }
+    #game td:hover, #game td.active {
+      background-color: #eee; }
+    #game td.locked {
+      font-weight: bold; }
+    #game td.invalid {
+      color: red; }
+
+#keypad {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: none;
+  position: absolute;
+  background-color: #111;
+  border: 5px solid blueviolet;
+  cursor: pointer; }
+  #keypad td {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    border: 5px solid blueviolet;
+    color: #ddd; }
+    #keypad td:hover {
+      background-color: #222; }
+
+#toolbar {
+  background-color: #999;
+  border: 5px solid blueviolet;
+  padding: 10px; }
+  #toolbar #reset {
+    float: right;
+    cursor: pointer; }
+
+#overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center; }
+  #overlay #message {
+    margin: 130px auto 20px; }
+    #overlay #message h3 {
+      font-size: 2em;
+      margin: 10px; }
+  #overlay #restart {
+    cursor: pointer;
+    font-size: 1.5em; }
+
+/*# sourceMappingURL=main.css.map */

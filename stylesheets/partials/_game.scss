@@ -1,0 +1,83 @@
+//Main game table
+
+#game {
+	position: relative;
+	background-color: #ccc;
+	border: 2px solid #000;
+	cursor: pointer;
+	tr:nth-child(3), tr:nth-child(6) {
+		border-bottom: 2px solid #000;
+	}
+	td {
+		width: $cell-width;
+		height: $cell-height;
+		border: 1px solid #000;
+		text-align: center;
+		vertical-align: middle;
+		&:nth-child(3), &:nth-child(6) {
+			border-right: 2px solid #000;
+		}
+		&:hover, &.active {
+			background-color: #eee;
+		}
+		&.locked {
+			font-weight: bold;
+		}
+		&.invalid {
+			color: red;
+		}
+	}
+}
+
+#keypad {
+	top: 0;
+	left: 0;
+	opacity: 0;
+	display: none;
+	position: absolute;
+	background-color: #111;
+	border: 2px solid #222;
+	cursor: pointer;
+	td {
+		width: $cell-width;
+		height: $cell-height;
+		text-align: center;
+		vertical-align: middle;
+		border: 1px solid #ddd;
+		color: #ddd;
+		&:hover {
+			background-color: #222;
+		}
+	}
+}
+
+#toolbar {
+	background-color: #999;
+	border: 1px solid #000;
+	padding: 10px;
+	#reset {
+		float: right;
+		cursor: pointer;
+	}
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255,255,255,0.9);
+	text-align: center;
+	#message {
+		margin: 130px auto 20px;
+		h3 {
+			font-size: 2em;
+			margin: 10px;
+		}
+	}
+	#restart {
+		cursor: pointer;
+		font-size: 1.5em;
+	}
+}
